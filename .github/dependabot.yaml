@@ -1,0 +1,27 @@
+version: 2
+
+updates:
+
+  - package-ecosystem: "gomod"
+    directory: "/"
+    groups:
+      go:
+        patterns: ["*"]
+    schedule:
+      interval: monthly
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    groups:
+      npm:
+        patterns: ["*"]
+    schedule:
+      interval: monthly
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    groups:
+      github-actions:
+        patterns: ["*"]
+    schedule:
+      interval: monthly
