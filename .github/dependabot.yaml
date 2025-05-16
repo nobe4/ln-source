@@ -1,8 +1,17 @@
+---
 version: 2
 
 # It's fine to have dependabot consider more languages than used in the repo.
 
 updates:
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    groups:
+      go:
+        patterns: ["*"]
+    schedule:
+      interval: monthly
 
   - package-ecosystem: "gomod"
     directory: "/"
