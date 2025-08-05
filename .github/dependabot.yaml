@@ -8,7 +8,7 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     groups:
-      go:
+      github-actions:
         patterns: ["*"]
     schedule:
       interval: monthly
@@ -25,14 +25,6 @@ updates:
     directory: "/"
     groups:
       npm:
-        patterns: ["*"]
-    schedule:
-      interval: monthly
-
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    groups:
-      github-actions:
         patterns: ["*"]
     schedule:
       interval: monthly
